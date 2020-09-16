@@ -1,0 +1,25 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2lhbSIsImlhdCI6MTYwMDIzNjc3MywiZXhwIjoxNjAwMjM2Nzg4fQ.4ZzrpoE08l7JiBbbV137z-IgxS-DanqkzM1L-hNYzhc
+###
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": ""
+}
+
+###
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2lhbSIsImlhdCI6MTYwMDIzNjcyNH0.cZhe2LnayH2iDANuFuzt-jI2741wIOZADTUog0pMzsY"
+}
+
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "siam"
+}
